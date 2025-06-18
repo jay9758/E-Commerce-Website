@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# 🛍️ filterfind — E-Commerce Store with Advanced Filtering
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React.js + TypeScript** e-commerce web app styled with **Tailwind CSS** that enables users to search and filter products seamlessly. Includes features like category filtering, price range, keyword search, and top sellers — all with a responsive design! 🚀
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Preview
 
-## Expanding the ESLint configuration
+👉 [Live Demo on Vercel](https://vercel.com/jay9758s-projects?projectDeleted=e-commerce-website)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧩 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ **Search Products** by name or keyword  
+✅ **Advanced Filtering** by:
+- Category
+- Minimum and Maximum Price
+- Keywords (e.g. brand, product type)
+- Reset filters
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+✅ **Top Sellers** – Follow/unfollow feature  
+✅ **Responsive UI** – Mobile-first, clean design  
+✅ **Pagination** – Load more products as needed  
+✅ **📡 Real-time Data** – Product data fetched from an external API
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 🛠️ Tech Stack
+
+| Technology       | Description                               |
+| ---------------- | ------------------------------------------ |
+| ⚛️ React.js      | UI library for building frontend           |
+| 🟦 TypeScript    | Strongly-typed JavaScript                  |
+| 🎨 Tailwind CSS  | Utility-first CSS framework                |
+| 🌐 React Router  | Client-side routing                        |
+| 🔍 Custom Hooks  | For managing filters and logic             |
+| 🌐 **REST API**  | Fetching product data from remote server   |
+| 🔁 Axios / Fetch | For handling API requests                  |
+
+---
